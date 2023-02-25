@@ -1,0 +1,157 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  @font-face {
+    font-family: "Fira Code";
+    src: url("/fonts/FiraCode-Regular.ttf") format("truetype");
+    font-weight: 400;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: "Cambria";
+    src: url("/fonts/Cambria.ttf") format("truetype");
+    font-weight: 400;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: "Raleway";
+    src: url("/fonts/Raleway-Regular.ttf") format("truetype");
+    font-weight: 400;
+    font-style: normal;
+  }
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @apply mt-5 mb-5 text-primary;
+    font-family: "Cambria";
+  }
+  h1 {
+    @apply text-2xl;
+  }
+  h3 {
+    @apply text-2xl font-light;
+  }
+  p {
+    @apply mb-4 text-lg;
+    font-family: "Raleway", serif;
+  }
+  .text-neon {
+    text-shadow: 0px 0px 20px #ff9f1c, 0px 0px 40px #ff9f1c,
+      0px 0px 60px #ff9f1c, 0px 0px 80px #ff9f1c, 0px 0px 100px #ff9f1c;
+    color: #ff9f1c;
+  }
+  .text-neon-sm {
+    text-shadow: 0px 0px 40px #ff9f1c;
+    color: #ff9f1c;
+  }
+  /** dark */
+  [data-theme="luxury"] .text-neon {
+    text-shadow: 0px 0px 20px #ff9f1c, 0px 0px 40px #ff9f1c,
+      0px 0px 60px #ff9f1c, 0px 0px 80px #ff9f1c, 0px 0px 100px #ff9f1c;
+    color: #ff9f1c;
+  }
+  /** light */
+  [data-theme="light"] .text-neon {
+    text-shadow: 0px 0px 20px #ff9f1c, 0px 0px 40px #ff9f1c,
+      0px 0px 60px #ff9f1c, 0px 0px 80px #ff9f1c, 0px 0px 100px #ff9f1c;
+    color: #ff9f1c;
+  }
+
+  [data-theme="light"] .ring-primary-focus {
+    --tw-ring-color: #ff9f1c;
+  }
+  [data-theme="luxury"] .ring-primary-focus {
+    --tw-ring-color: #ff9f1c;
+  }
+  .font-fira {
+    font-family: "Fira Code", monospace;
+  }
+  .font-cambria {
+    font-family: "Cambria", serif;
+  }
+  [data-theme="luxury"] a > span {
+    @apply hover:bg-white rounded-sm decoration-solid decoration-white hover:text-black pl-2 pr-2 font-semibold link font-fira;
+  }
+  [data-theme="light"] a > span {
+    @apply hover:bg-black rounded-[3px] decoration-solid decoration-black hover:text-white pl-2 pr-2 font-semibold link font-fira;
+  }
+  [data-theme="luxury"] .haxor-link {
+    @apply hover:bg-white rounded-sm decoration-solid decoration-white hover:text-black pl-2 pr-2 font-semibold link font-fira;
+  }
+  [data-theme="light"] .haxor-link {
+    @apply hover:bg-black rounded-[3px] decoration-solid decoration-black hover:text-white pl-2 pr-2 font-semibold link font-fira;
+  }
+  header > div > * {
+    @apply hover:text-primary;
+  }
+  .badge-items > div {
+    @apply badge badge-accent rounded-sm m-1;
+  }
+  .badge-items {
+    @apply flex-wrap font-semibold;
+  }
+  [data-theme="luxury"] .exp-container {
+    @apply p-3 border rounded-md border-white mb-10;
+  }
+  [data-theme="light"] .exp-container {
+    @apply p-3 border rounded-md border-black mb-10;
+  }
+  [data-theme="luxury"] .skills-container {
+    @apply p-3 text-center border rounded-md border-white;
+  }
+  [data-theme="light"] .skills-container {
+    @apply p-3 text-center border rounded-md border-black;
+  }
+  [data-theme="luxury"] .exp-haxor-link {
+    @apply hover:bg-white rounded-sm decoration-solid decoration-white hover:text-black pl-2 pr-2 font-semibold link font-fira whitespace-normal sm:whitespace-nowrap h-full sm:divider mb-5 mt-5 cursor-default;
+  }
+  [data-theme="light"] .exp-haxor-link {
+    @apply hover:bg-black rounded-[3px] decoration-solid decoration-black hover:text-white pl-2 pr-2 font-semibold link font-fira whitespace-normal sm:whitespace-nowrap h-full sm:divider mb-5 mt-5 cursor-default;
+  }
+  [data-theme="luxury"] .skills-haxor-link {
+    @apply hover:bg-white rounded-sm decoration-solid decoration-white hover:text-black pl-2 pr-2 font-semibold link font-fira whitespace-normal sm:whitespace-nowrap h-full sm:divider mb-5 mt-5 cursor-default text-lg;
+  }
+  [data-theme="light"] .skills-haxor-link {
+    @apply hover:bg-black rounded-[3px] decoration-solid decoration-black hover:text-white pl-2 pr-2 font-semibold link font-fira whitespace-normal sm:whitespace-nowrap h-full sm:divider mb-5 mt-5 cursor-default text-lg;
+  }
+  .skills-label {
+    @apply text-sm font-fira font-semibold underline;
+  }
+
+  .progressBar {
+    height: 25px;
+    width: 100%;
+    border-radius: 5px;
+    display: block;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+
+  .progress {
+    background: linear-gradient(#d0a24e, #be9348);
+    border: 1px solid #f0cb87;
+    height: 23px;
+    width: 5%;
+    border-radius: 0;
+    float: left;
+    display: block;
+  }
+  [data-theme="luxury"] .progressBar {
+    box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.2),
+      0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border: 1px solid white;
+  }
+  [data-theme="light"] .progressBar {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border: 1px solid black;
+  }
+
+  span.skills-progress-label {
+    @apply font-semibold;
+  }
+}
