@@ -57,7 +57,11 @@ function Header({ handlePageChange }: HeaderProps) {
         >
           <FaLinkedin className="w-6 h-6" />
         </Link>
-        <Link href="resume.pdf" target="_blank" rel="noopener noreferrer">
+        <Link
+          href="harout-resume.pdf"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           <ImProfile className="w-6 h-6" />
         </Link>
         <Link href="/?page=contact#contact">
