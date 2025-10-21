@@ -55,9 +55,10 @@ export default function Home() {
         <title>Haroutio - Portfolio</title>
         <meta
           name="description"
-content="The Personal Portfolio of Harout Terterian: A goal-oriented Technology Professional with expertise spanning full-stack development, systems administration, and IT infrastructure. Over 15 years of experience bridging software engineering and enterprise IT operations. Core values include persistence, consistency, critical thinking, and efficiency."        />
+          content="The Personal Portfolio of Harout Terterian: A goal-oriented Technology Professional with expertise spanning full-stack development, systems administration, and IT infrastructure. Over 15 years of experience bridging software engineering and enterprise IT operations. Core values include persistence, consistency, critical thinking, and efficiency." />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" type="image/png" href="/logo-transparent.png" />
+        <link rel="apple-touch-icon" href="/logo-transparent.png" />
       </Head>
       <div className="max-w-4xl p-6 mx-auto">
         <Header handlePageChange={handlePageChange} />
