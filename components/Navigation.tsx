@@ -36,9 +36,9 @@ function Navigation({ handlePageChange }: NavigationProps) {
           href="/"
         />
         <AnimatedLink
-          text="CODE"
-          handleLinkClick={() => handlePageChangeClicked("/code")}
-          href="/?page=code"
+          text="PROJECTS"
+          handleLinkClick={() => handlePageChangeClicked("/projects")}
+          href="/?page=projects"
         />
         <AnimatedLink
           text="EXPERIENCE"

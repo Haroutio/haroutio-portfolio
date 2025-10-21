@@ -36,7 +36,7 @@ const AnimatedLink = ({ href, text, handleLinkClick }: AnimatedLinkProps) => {
     });
 
     if (iteration < text.length) {
-      const timeoutId = window.setTimeout(() => animate(iteration + 1 / 4), 30);
+      const timeoutId = window.setTimeout(() => animate(iteration + 1 / 3), 30);
       setAnimationTimeoutId(timeoutId);
     }
   };

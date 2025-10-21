@@ -6,7 +6,7 @@ import {
   Hero,
   Navigation,
   About,
-  Code,
+  Projects,
   Experience,
   Skills,
   Contact,
@@ -23,8 +23,8 @@ export default function Home() {
 
     if (!path) {
       setActiveComponent("about");
-    } else if (path === "code") {
-      setActiveComponent("code");
+    } else if (path === "projects") {
+      setActiveComponent("projects");
     } else if (path === "exp") {
       setActiveComponent("exp");
     } else if (path === "skills") {
@@ -38,8 +38,8 @@ export default function Home() {
     const path = router.query.page;
     if (!path) {
       setActiveComponent("about");
-    } else if (path === "code") {
-      setActiveComponent("code");
+    } else if (path === "projects") {
+      setActiveComponent("projects");
     } else if (path === "exp") {
       setActiveComponent("exp");
     } else if (path === "skills") {
@@ -55,8 +55,7 @@ export default function Home() {
         <title>Haroutio - Portfolio</title>
         <meta
           name="description"
-          content="The Personal Portfolio of Harout Terterian: A goal oriented Software Engineer and tech enthusiast who aims to grow consistently and seeks knowledge throughout the industry. Values include `persistence, consistency, critical thinking, and efficiency."
-        />
+content="The Personal Portfolio of Harout Terterian: A goal-oriented Technology Professional with expertise spanning full-stack development, systems administration, and IT infrastructure. Over 15 years of experience bridging software engineering and enterprise IT operations. Core values include persistence, consistency, critical thinking, and efficiency."        />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
@@ -71,7 +70,7 @@ export default function Home() {
             reCaptchaKey={process.env.NEXT_PUBLIC_RECAPTCHA_SITE_KEY!}
           >
             {activeComponent === "about" && <About />}
-            {activeComponent === "code" && <Code />}
+            {activeComponent === "projects" && <Projects />}
             {activeComponent === "exp" && <Experience />}
             {activeComponent === "skills" && <Skills />}
             {activeComponent === "contact" && <Contact />}

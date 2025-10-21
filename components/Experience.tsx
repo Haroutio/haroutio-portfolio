@@ -18,6 +18,113 @@ function Experience() {
     >
       <h1>💼 Experience</h1>
       <p>Previous Work</p>
+      
+      <div className="exp-container">
+        <div className="exp-haxor-link">
+          IT Engineer @ Les Olson IT
+        </div>
+        <ul className="">
+          <li>
+            <p>
+              - Managed and architected enterprise-level IT infrastructure, focusing on network administration, server management, and systems optimization. Leveraged technical expertise to ensure seamless operations across the organization.
+            </p>
+          </li>
+          <li>
+            <p>
+              - Implemented robust security measures and infrastructure solutions, utilizing deep understanding of enterprise systems architecture to deliver scalable and reliable IT services.
+            </p>
+          </li>
+          <li>
+            <p>
+              - Collaborated with cross-functional teams to bridge the gap between development and operations, ensuring optimal performance and integration across the full technology stack.
+            </p>
+          </li>
+        </ul>
+        <span className="flex-1 skills-label">Skills Mastered:</span>
+        <div className="flex flex-row badge-items">
+          <div>Windows Server</div>
+          <div>Active Directory</div>
+          <div>System Administration</div>
+          <div>Network Administration</div>
+          <div>VMware</div>
+          <div>Proxmox</div>
+          <div>Linux</div>
+          <div>PowerShell</div>
+          <div>Security & Compliance</div>
+          <div>Enterprise Infrastructure</div>
+          <div>Backup Solutions</div>
+        </div>
+      </div>
+
+      <div className="exp-container">
+        <div className="exp-haxor-link">
+          Systems Administrator @ GM Tax Services
+        </div>
+        <ul className="">
+          <li>
+            <p>
+              - Managed enterprise infrastructure including server environments, databases, and IT operations. Ensured high availability and reliability of mission-critical systems supporting business operations.
+            </p>
+          </li>
+          <li>
+            <p>
+              - Administered user accounts, security policies, and system backups. Implemented best practices for system maintenance, monitoring, and disaster recovery procedures.
+            </p>
+          </li>
+          <li>
+            <p>
+              - Provided technical support and troubleshooting for complex infrastructure issues, minimizing downtime and ensuring business continuity.
+            </p>
+          </li>
+        </ul>
+        <span className="flex-1 skills-label">Skills Mastered:</span>
+        <div className="flex flex-row badge-items">
+          <div>Windows Server</div>
+          <div>Active Directory</div>
+          <div>System Administration</div>
+          <div>Database Management</div>
+          <div>Linux</div>
+          <div>PowerShell</div>
+          <div>Network Configuration</div>
+          <div>Backup & Recovery</div>
+          <div>Security Management</div>
+        </div>
+      </div>
+
+      <div className="exp-container">
+        <div className="exp-haxor-link">
+          Software Engineer @ Go Viral Enterprises
+        </div>
+        <ul className="">
+          <li>
+            <p>
+              - Developed and maintained full-stack web applications using modern frameworks and technologies. Collaborated with development teams to deliver high-quality software solutions.
+            </p>
+          </li>
+          <li>
+            <p>
+              - Implemented scalable architecture patterns and best practices for code quality, testing, and deployment. Contributed to continuous improvement of development processes.
+            </p>
+          </li>
+          <li>
+            <p>
+              - Worked closely with stakeholders to gather requirements, design solutions, and deliver features that met business objectives within specified timelines.
+            </p>
+          </li>
+        </ul>
+        <span className="flex-1 skills-label">Skills Mastered:</span>
+        <div className="flex flex-row badge-items">
+          <div>JavaScript</div>
+          <div>ReactJS</div>
+          <div>NodeJS</div>
+          <div>MongoDB</div>
+          <div>ExpressJS</div>
+          <div>Git</div>
+          <div>REST APIs</div>
+          <div>Agile Methodology</div>
+        </div>
+      </div>
+
       <div className="exp-container">
         <div className="exp-haxor-link">
           Full-Stack Web Developer @ Silton Information Software Inc
@@ -60,6 +167,7 @@ function Experience() {
           <div>TypeScript</div>
         </div>
       </div>
+
       <div className="exp-container">
         <div className="exp-haxor-link">
           Freelance Web Developer & Corporate Services
@@ -105,6 +213,7 @@ function Experience() {
           <div>Powershell</div>
         </div>
       </div>
+
       <div className="exp-container">
         <div className="exp-haxor-link">
           Full-Stack Developer @ LASO Concepts
@@ -161,6 +270,7 @@ function Experience() {
           <div>Heroku</div>
         </div>
       </div>
+
       <div className="exp-container">
         <div className="exp-haxor-link">
           Full-Stack Developer @ Automobility LA Hackathon

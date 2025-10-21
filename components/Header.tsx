@@ -44,20 +44,6 @@ function Header({ handlePageChange }: HeaderProps) {
         className="flex flex-row items-center space-x-4"
       >
         <Link
-          href="https://www.github.com/haroutio"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <FaGithub className="w-6 h-6" />
-        </Link>
-        <Link
-          href="https://www.linkedin.com/in/harout-terterian/"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <FaLinkedin className="w-6 h-6" />
-        </Link>
-        <Link
           href="harout-resume.pdf"
           target="_blank"
           rel="noopener noreferrer"

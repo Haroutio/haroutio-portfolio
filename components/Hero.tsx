@@ -54,9 +54,9 @@ function Hero() {
     delaySpeed: 3000,
   });
   const [banner2] = useTypewriter({
-    words: [`Software Engineer`],
+    words: [`Technologist | Software Engineer | IT Engineer`],
     loop: 1,
-    typeSpeed: 77,
+    typeSpeed: 50,
     deleteSpeed: 50,
   });
 
